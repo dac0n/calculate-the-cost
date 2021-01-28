@@ -1,0 +1,30 @@
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    color: rgb(98, 98, 98);
+    background: #F6F8FF;
+}
+
+#form-wrapper{
+    width:350px;
+    margin:0 auto;
+}
+
+form {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    flex-direction: row;
+}
+
+form input {
+    border: 1px solid rgb(151, 151, 151);
+    padding: 15px 28px;
+    margin: 10px 10px;   
+    cursor: pointer;
+}
