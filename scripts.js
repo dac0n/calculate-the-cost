@@ -50,7 +50,7 @@ form.addEventListener("change", () => {
       ? "Please enter positive distance."
       : power < requiredPower
       ? `The ship will not move if the power is less than ${requiredPower}.`
-      : `You will spend ${time} in sea, consuming ${fuelSpent.toFixed(2)} fuel and ${supplySpent.toFixed(2)} supplies. 
+      : `You will spend ${time} at sea, consuming ${fuelSpent.toFixed(2)} fuel and ${supplySpent.toFixed(2)} supplies. 
       Your terror will increase by ${terror}.`;
   resultEl.innerText = result;
   stats = (length>0 && power>=requiredPower) ? `Ship speed: ${speed.toFixed(2)} km/h (${((speed * 6)/1.097).toFixed(0)} ft./round). 
