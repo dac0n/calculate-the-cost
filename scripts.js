@@ -32,7 +32,7 @@ form.addEventListener("change", () => {
   /* fuelConsumption = (2 + (0.0005 * power) * (1 - effeciency.value) * 4) * 0.01;  */ 
   // old formula (effeciency does not affect optics fuel consumtion)
   fuelConsumption = (lightConsumption + 2e-5 * power) * (1 - effeciency.value);
-  supplyConsumption = crew.value>0 ? crew.value * 0.04 : 0;
+  supplyConsumption = crew.value>0 ? (crew.value * 0.04 - 0.04) : 0;
   hoursSpent = length / speed;
   fuelSpent = hoursSpent * fuelConsumption;
   daysSpent = hoursSpent / 24;
