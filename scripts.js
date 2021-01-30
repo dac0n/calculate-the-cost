@@ -44,9 +44,10 @@ calculateBasics = () => {
   let maxSpeed = calculateSpeed(power * 2, weight); 
   let requiredPower = weight / 2;
   let fuelConsumption = (lightConsumption + 2e-5 * power) * (1 - effeciency.value);
-  let supplyConsumption = crew.value>0 ? crew.value * 0.04 : 0;
+  let supplyConsumption = crew.value>0 ? (crew.value-1) * 0.04 : 0;
   /* fuelConsumption = (2 + (0.0005 * power) * (1 - effeciency.value) * 4) * 0.01;  */ 
   // old formula (effeciency does not affect optics fuel consumtion)
+  // crew.value-1 because two of player characters eat less
 
   return basicResults = {lightConsumption, power, weight, speed, maxSpeed, requiredPower, fuelConsumption, supplyConsumption};
 }
