@@ -13,6 +13,7 @@ body {
 }
 
 form {
+    width: 350px;
     align-items: flex-end;
     display: flex;
     flex-direction: column;
