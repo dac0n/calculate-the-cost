@@ -9,15 +9,22 @@
 </head>
 <div id="form-wrapper">
     <form>
-        <label for="length">Travel distance  <input type="number" id="length"></label>
+        <label for="length" id="lengthLabel">Travel distance  <input type="number" id="length"></label>
+        <div id="cargo" hidden>
+            <input type="number" id="fuel" placeholder="Fuel"><input type="number" id="supplies" placeholder="Supplies">
+        </div>
         <label for="power">Engine power  <input type="number" id="power" value="2500"></label>
         <label for="weight">Ship weight  <input type="number" id="weight" value="800"></label>
         <label for="crew">Crew amount  <input type="number" id="crew" value="9"></label>
         <label for="effeciency">Fuel effeciency  <input type="number" id="effeciency" value="0.05"></label>
-        <label for="turbo">Full power?<input type="checkbox" id="turbo"></label>
-        <label for="offLight">Turn light off?<input type="checkbox" id="offLight"></label>
 
+        <div id="options">
+        <button id="changeForm" type="button">Change form</button>
+        <label for="turbo" class = "options checkbox">Full power?<input type="checkbox" id="turbo"></label>
+        <label for="offLight" class = "options checkbox">Turn light off?<input type="checkbox" id="offLight"></label>
+        </div>
     </form>
+
     <p id="result">Enter the travel distance to calculate costs.</p>
     <p id="stats"></p>
 </div>

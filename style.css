@@ -28,3 +28,29 @@ form input {
     margin: 10px 10px;   
     cursor: pointer;
 }
+.options {
+    flex-direction: row;
+    margin-left: 2px;
+}
+
+#cargo {
+    justify-content: flex-end;
+}
+
+#cargo input{
+    width: 30%;
+    padding: 12px;
+    margin: 2%;
+}
+
+button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin-right: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
