@@ -87,7 +87,7 @@ calculateFromSavings = (fuelConsumption, supplyConsumption, speed) => {
   let fuel = fuelEl.value || null;
   let supplies = suppliesEl.value;
   fueledFor = fuel ? calculateTime(fuel/fuelConsumption) : '0 hours';
-  hoursAvailable = Math.min(fuel/fuelConsumption, supplies/supplyConsumption);
+  hoursAvailable = Math.min(fuel/fuelConsumption, supplies/supplyConsumption*24);
   console.log(`Fuel consumption: ${fuelConsumption}, hours available: ${hoursAvailable}`);
   console.log(`fuel/fuelConsumption: ${fuel/fuelConsumption}, supplies/supplyConsumption: ${supplies/supplyConsumption}`);
 
